@@ -427,6 +427,7 @@ export const translations = {
       popular: "Most Popular Choice",
       starter: {
         name: "Starter",
+        price : "$0.010 / page",
         unit: "plan",
         description: "Ideal for small businesses and developers",
         features: {
@@ -439,6 +440,7 @@ export const translations = {
       },
       professional: {
         name: "Professional",
+        price : "$0.008 / page",
         unit: "plan",
         description: "Ideal for businesses handling higher document volumes",
         features: {
@@ -453,6 +455,7 @@ export const translations = {
       },
       enterprise: {
         name: "Enterprise",
+        price : "By agreement",
         unit: "plan",
         description: "For large organizations with custom requirements",
         features: {
@@ -970,6 +973,7 @@ export const translations = {
       popular: "Наиболее популярный выбор",
       starter: {
         name: "Стартовый",
+        price: "$0.010 / страница",
         unit: "тариф",
         description: "Идеально для малого бизнеса и разработчиков",
         features: {
@@ -982,6 +986,7 @@ export const translations = {
       },
       professional: {
         name: "Профессиональный",
+        price: "$0.008 / страница",
         unit: "тариф",
         description: "Идеально для компаний, работающих с большими объемами документов",
         features: {
@@ -996,6 +1001,7 @@ export const translations = {
       },
       enterprise: {
         name: "Корпоративный",
+        price : "По согласованию",
         unit: "тариф",
         description: "Для крупных организаций с индивидуальными требованиями",
         features: {
@@ -1511,6 +1517,7 @@ export const translations = {
       popular: "Eng zo'r tanlov",
       starter: {
         name: "Boshlang'ich",
+        price: "$0.010 / sahifa",
         unit: "tarif",
         description: "Kichik biznes va dasturchilar uchun ideal",
         features: {
@@ -1523,6 +1530,7 @@ export const translations = {
       },
       professional: {
         name: "Professional",
+        price: "$0.008 / sahifa",
         unit: "tarif",
         description: "Ko'proq hajmdagi hujjatlar bilan ishlaydigan bizneslar uchun ideal",
         features: {
@@ -1537,6 +1545,7 @@ export const translations = {
       },
       enterprise: {
         name: "Korporativ",
+        price: "Kelishiladi",
         unit: "tarif",
         description: "Maxsus talablariga ega yirik tashkilotlar uchun",
         features: {
@@ -1685,3 +1694,26 @@ export type TranslationKey =
   | `cta.${keyof typeof translations.en.cta}`
   | `getStartedPage.${keyof typeof translations.en.getStartedPage}`
   | `getStartedPage.steps.${keyof typeof translations.en.getStartedPage.steps}`
+  | `accuracyPage.${keyof typeof translations.en.accuracyPage}`
+  | `accuracyPage.methodologyBullets.${keyof typeof translations.en.accuracyPage.methodologyBullets}`
+  | `accuracyPage.matchCriteriaBullets.${keyof typeof translations.en.accuracyPage.matchCriteriaBullets}`
+  | `accuracyPage.datasetsRows.${keyof typeof translations.en.accuracyPage.datasetsRows}`
+  | `accuracyPage.datasetsColumns.${keyof typeof translations.en.accuracyPage.datasetsColumns}`
+  | `accuracyPage.notes.${keyof typeof translations.en.accuracyPage.notes}`
+  | `technical.quickstart.${keyof typeof translations.en.technical.quickstart}`
+  | `technical.specs.${keyof typeof translations.en.technical.specs}`
+  | `securityPage.${keyof typeof translations.en.securityPage}`
+  | `securityPage.encryptionItems.${keyof typeof translations.en.securityPage.encryptionItems}`
+  | `securityPage.complianceItems.${keyof typeof translations.en.securityPage.complianceItems}`
+  | `securityPage.deploymentItems.${keyof typeof translations.en.securityPage.deploymentItems}`
+  | `securityPage.operationsItems.${keyof typeof translations.en.securityPage.operationsItems}`
+  | `roi.inputs.${keyof typeof translations.en.roi.inputs}`
+  | `roi.inputs.planOptions.${keyof typeof translations.en.roi.inputs.planOptions}`
+  | `roi.outputs.${keyof typeof translations.en.roi.outputs}`
+  | `interactiveDemo.${keyof typeof translations.en.interactiveDemo}`
+  | `interactiveDemo.samples.${keyof typeof translations.en.interactiveDemo.samples}`
+  | `industries.items.${keyof typeof translations.en.industries.items}`
+  | `docsPage.${keyof typeof translations.en.docsPage}`
+  | `docsPage.resources.${keyof typeof translations.en.docsPage.resources}`
+  | `docsPage.sections.${keyof typeof translations.en.docsPage.sections}`
+  

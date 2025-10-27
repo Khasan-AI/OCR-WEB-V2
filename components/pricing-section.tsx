@@ -61,6 +61,7 @@ function PricingCard({ tierKey, popular, featureKeys }: PricingCardProps) {
   const { t } = useLanguage()
 
   const name = t(`pricing.${tierKey}.name`)
+  const price = t(`pricing.${tierKey}.price`)
   const description = t(`pricing.${tierKey}.description`)
   const cta = t(`pricing.${tierKey}.cta`)
   const unit = t(`pricing.${tierKey}.unit`)
@@ -75,7 +76,7 @@ function PricingCard({ tierKey, popular, featureKeys }: PricingCardProps) {
       <CardHeader className="pb-6 text-center">
         {popular && <Badge className="mx-auto mb-4 w-fit bg-indigo-600 text-white">{t("pricing.popular")}</Badge>}
         <CardTitle className="text-2xl font-heading font-bold text-gray-900">{name}</CardTitle>
-        <div className="mt-2 text-sm font-medium uppercase tracking-wide text-indigo-600">{unit}</div>
+        <div className="mt-2 text-sm font-medium uppercase tracking-wide text-indigo-600">{price}</div>
         <CardDescription className="mt-3 text-gray-600">{description}</CardDescription>
       </CardHeader>
 

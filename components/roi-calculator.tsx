@@ -49,11 +49,8 @@ export function ROICalculator() {
   const manualSpend = pagesPerMonth * manualCostPerPage
   const ocrSpend = pagesPerMonth * PLAN_CONFIG[plan].costPerPage
   const monthlySavings = manualSpend - ocrSpend
-  const implementationCost = 12_000
-  const roiSixMonths =
-    implementationCost === 0
-      ? 0
-      : ((monthlySavings * 6 - implementationCost) / implementationCost) * 100
+  const implementationCost: number = 12_000
+  const roiSixMonths = implementationCost === 0 ? 0 : ((monthlySavings * 6 - implementationCost) / implementationCost) * 100
 
   const formatted = {
     pagesPerMonth: Math.round(pagesPerMonth).toLocaleString(),
